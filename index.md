@@ -187,9 +187,10 @@ title: Oluwafemi (Femi) James
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video autoplay loop muted playsinline style="width: 100%; display: block;">
+<div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <video controls autoplay loop muted playsinline preload="metadata" poster="/assets/images/user_service_calendar.png" style="width: 100%; display: block;">
         <source src="/assets/videos/predictive_scheduling.mp4" type="video/mp4">
+        Your browser does not support the video tag.
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">4. Demo: Predictive Scheduling</strong><br>
@@ -198,7 +199,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video autoplay loop muted playsinline style="width: 100%; display: block;">
+      <video controls autoplay loop muted playsinline preload="metadata" poster="/assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
         <source src="/assets/videos/nlp_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -208,7 +209,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video autoplay loop muted playsinline style="width: 100%; display: block;">
+      <video controls autoplay loop muted playsinline preload="metadata" poster="/assets/images/user_service_analytics.png" style="width: 100%; display: block;">
         <source src="/assets/videos/cv_waste_sorting.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -218,7 +219,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video autoplay loop muted playsinline style="width: 100%; display: block;">
+      <video controls autoplay loop muted playsinline preload="metadata" poster="/assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
         <source src="/assets/videos/dispatch_management.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
