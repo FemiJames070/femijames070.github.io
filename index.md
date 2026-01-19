@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Oluwafemi (Femi) James - Full-Stack AI Engineer & Product Growth Lead
+title: Oluwafemi (Femi) James
 ---
 
 <div class="hero-box">
