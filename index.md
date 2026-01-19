@@ -41,7 +41,7 @@ title: Oluwafemi (Femi) James
 <div class="project-card" style="border-top: 4px solid #159957;">
   
   <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="margin-bottom: 5px;">🚀 MESS Tracker</h2>
+    <h2 style="margin-bottom: 5px;">Flagship Platform: MESS Tracker</h2>
     <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">The Asset-Light Operating System for Waste Management</p>
   </div>
 
@@ -49,7 +49,7 @@ title: Oluwafemi (Femi) James
     MESS Tracker is a <strong>multi-tenant SaaS marketplace</strong> that digitizes the entire waste service lifecycle. It serves as a centralized operating system, replacing fragmented, manual workflows with an intelligent, data-driven platform that connects demand, dispatch, and execution.
   </p>
 
-  <h3 style="border-bottom: 1px solid #eaecef; padding-bottom: 10px; margin-top: 40px;">🏗️ System Architecture: The "Three-Gate" Model</h3>
+  <h3 style="border-bottom: 1px solid #eaecef; padding-bottom: 10px; margin-top: 40px;">System Architecture: The "Three-Gate" Model</h3>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
     
@@ -66,7 +66,9 @@ title: Oluwafemi (Femi) James
     <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
       <h4 style="margin-top: 0; color: #24292e;">💾 The "Jukebox" Data Model</h4>
       <p style="font-size: 0.9rem; margin-bottom: 0;">
-        Designed a hierarchical relational model [cite: 549] that separates <strong>Service Definitions</strong> from <strong>Tenant Availability</strong>. This allows 8+ tenants to share one infrastructure while maintaining strict data isolation.
+        Designed a hierarchical relational model separating <strong>Service Definitions</strong> from <strong>Tenant Availability</strong>. 
+        <br><br>
+        The system orchestrates <strong>98+ micro-services</strong> and <strong>18+ core clusters</strong> across <strong>8+ tenants</strong> , utilizing <strong>Redis</strong> to serve <strong>10,000+ cached keys</strong>  with <strong>millisecond latency</strong>.
       </p>
     </div>
 
