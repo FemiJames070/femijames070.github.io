@@ -10,107 +10,83 @@
   </div>
 </section>
 
-# I design, deploy, and scale AI systems that work in the real world.
-
-I don’t just prototype ideas.  
-I build **production-grade, ethical, and scalable AI products** — from system design to deployment and growth.
-
-I operate at the intersection of:
-**AI Engineering • Product Architecture • Data-Driven Growth**
-
+---
+layout: default
+title: Femi James | AI Systems & Product Growth
 ---
 
-## 🚀 Flagship Product — MESS Tracker
+<header class="portfolio-hero">
+  <div class="container">
+    <h1 class="gradient-text">I design, deploy, and scale AI systems that work in the real world.</h1>
+    <p class="lead-text">I operate at the intersection of <strong>AI Engineering</strong>, <strong>Product Architecture</strong>, and <strong>Data-Driven Growth</strong>.</p>
+  </div>
+</header>
 
-**MESS Tracker** is a multi-tenant, AI-powered SaaS platform digitizing waste management operations across Western Canada.
+<hr class="section-divider">
 
-Designed as an **end-to-end operating system**, it replaces fragmented, manual workflows with an intelligent, scalable, and data-driven platform.
+<section id="projects" class="projects-section">
+  <h2 class="section-title">Selected Systems</h2>
 
-### What it delivers
-- AI-assisted scheduling & dispatch
-- Automated waste classification (Computer Vision)
-- Predictive demand & operational risk modeling
-- Multi-tenant architecture for B2B2C scale
-- Built-in growth intelligence (SEO, GEO, AEO)
+  <div class="project-card flagship">
+    <div class="project-info">
+      <span class="label">Flagship Product</span>
+      <h3>MESS Tracker</h3>
+      <p class="project-tagline">AI-powered SaaS digitizing waste management across Western Canada.</p>
+      <ul class="feature-list">
+        <li><strong>AI Scheduling:</strong> Dynamic dispatch optimization.</li>
+        <li><strong>Computer Vision:</strong> Automated waste classification.</li>
+        <li><strong>Growth Engine:</strong> Built-in SEO & AEO intelligence.</li>
+      </ul>
+      <div class="project-links">
+        <a href="/projects/mess-tracker" class="btn-sm">Read Case Study →</a>
+        <span class="ip-lock">🔒 IP Protected</span>
+      </div>
+    </div>
+    <div class="project-visual">
+       <div class="mockup-placeholder">System Architecture Visual</div>
+    </div>
+  </div>
 
-> 🔒 *Source code is protected under active IP agreements.*
+  <div class="project-card">
+    <div class="project-info">
+      <span class="label">Clinical Decision Support</span>
+      <h3>StrokeRisk AI</h3>
+      <p>An end-to-end clinical system built using the CRISP-DM lifecycle.</p>
+      <div class="tech-stack">
+        <span>Ensemble ML</span> <span>SHAP (XAI)</span> <span>Ethical AI</span>
+      </div>
+      <a href="/projects/strokerisk" class="link-arrow">View Case Study</a>
+    </div>
+  </div>
+</section>
 
-🎥 **Product Walkthrough (Video)**  
-📊 **System Architecture & Visuals (Canva)**  
-📈 **Impact & Results Overview**
+<section class="philosophy-section">
+  <div class="container grid-3-col">
+    <div class="phi-card">
+      <h4>Systems First</h4>
+      <p>I prioritize architecture over isolated models to ensure reliability.</p>
+    </div>
+    <div class="phi-card">
+      <h4>Ethical by Default</h4>
+      <p>Human-centered design isn't a feature; it's a requirement.</p>
+    </div>
+    <div class="phi-card">
+      <h4>Built to Scale</h4>
+      <p>Technically robust and operationally ready for growth.</p>
+    </div>
+  </div>
+</section>
 
-👉 **[View MESS Tracker Case Study →](/projects/mess-tracker)**
-
----
-
-## 🧠 Proof of Execution — StrokeRisk AI System
-
-**StrokeRisk** is an end-to-end clinical decision-support system built with a cross-functional team using the **CRISP-DM lifecycle**.
-
-This project demonstrates my ability to collaborate, design responsibly, and deploy AI in sensitive, high-stakes domains.
-
-### System Highlights
-- Ensemble machine learning models
-- Explainable AI (SHAP-based interpretability)
-- Human-centered & ethical AI design
-- Model monitoring & post-deployment evaluation
-- Team-based system delivery
-
-🎥 **Demo Walkthrough (Video)**  
-📊 **Model Pipeline & Evaluation Visuals**
-
-👉 **[View StrokeRisk Case Study →](/projects/strokerisk)**
-
----
-
-## 🧩 How I Build Systems
-
-I approach AI as a **product**, not a model.
-
-### My design philosophy
-- **Systems before models** — architecture matters
-- **Evidence over claims** — show behavior, not hype
-- **Human-centered by default** — ethics is not optional
-- **Built to scale** — technically and operationally
-
-### Core capabilities
-- Full-stack AI engineering (ML + backend + frontend)
-- NLP, Computer Vision, and Predictive Modeling
-- Cloud deployment, MLOps, and system monitoring
-- Product growth architecture (SEO, GEO, AEO)
-- Technical storytelling for teams, stakeholders, and investors
-
----
-
-## 👋 About Me
-
-I’m **Oluwafemi (Femi) James**, a Double-Honors graduate in **Integrated Artificial Intelligence** and **Data Analytics**.
-
-Currently, I serve as **Lead Architect for MESS Tracker**, where I translate AI research into production systems that deliver measurable business impact.
-
-I’ve worked across:
-- AI product development
-- Enterprise software engineering
-- Data-driven growth strategy
-- Cross-functional and multicultural teams
-
-👉 **[Read my full background →](/about)**  
-👉 **[View resume (PDF) →](/assets/Femi_James_Resume.pdf)**
-
----
-
-## 📬 Let’s Talk
-
-I’m open to:
-- AI engineering roles
-- Product & platform leadership
-- Founder & early-stage collaboration
-- Research-to-production partnerships
-
-📍 Calgary, AB, Canada  
-✉️ femijames070@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/femijames/)
-
----
+<footer class="portfolio-footer">
+  <div class="container">
+    <h2>Let’s Build Something.</h2>
+    <p>Currently in Calgary, AB | Available for AI Engineering & Product Leadership.</p>
+    <div class="footer-links">
+      <a href="mailto:femijames070@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/femijames/">LinkedIn</a>
+      <a href="/assets/Femi_James_Resume.pdf" class="resume-link">Download Resume</a>
+    </div>
+  </div>
+</footer>
 
 *This portfolio emphasizes real-world systems, protected intellectual property, and demonstrated outcomes through visuals, architecture, and product behavior.*
