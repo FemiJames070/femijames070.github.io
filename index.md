@@ -3,13 +3,39 @@ layout: default
 title: Oluwafemi (Femi) James
 ---
 
-<div class="hero-box">
-<h1>I engineer AI digital operating systems that turn manual industries into AI-driven markets.</h1>
-<p>
-  I use <strong>Full-Stack Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution</strong>.
-  I architect <strong>multi-tenant, asset-light infrastructure</strong> where <strong>NLP, Computer Vision, and Predictive Models</strong> (Regression, Classification, Time-Series) act as the connective tissue. 
-  I build platforms that autonomously orchestrate logistics, secure revenue streams and scale operations.
-</p>
+<div class="hero-box" style="text-align: center;">
+  <h1 style="margin-bottom: 25px;">I engineer AI digital operating systems that turn manual industries into AI-driven markets.</h1>
+  
+  <p style="font-size: 1.25rem; margin-bottom: 35px; color: #e2e8f0;">
+    I use <strong>Full-Stack Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution</strong>.
+  </p>
+
+  <div style="display: inline-block; text-align: left; max-width: 750px; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
+    <ul style="margin: 0; padding-left: 20px; list-style-type: none;">
+      
+      <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+        <span style="margin-right: 12px; font-size: 1.2rem;"></span>
+        <span>
+          <strong>The Infrastructure:</strong> I architect <strong>multi-tenant, asset-light systems</strong> that scale without overhead.
+        </span>
+      </li>
+
+      <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+        <span style="margin-right: 12px; font-size: 1.2rem;"></span>
+        <span>
+          <strong>The Connective Tissue:</strong> I deploy <strong>NLP, Computer Vision, and Predictive Models</strong> (Regression, Classification, Time-Series) to automate decisions.
+        </span>
+      </li>
+
+      <li style="margin-bottom: 0; display: flex; align-items: flex-start;">
+        <span style="margin-right: 12px; font-size: 1.2rem;"></span>
+        <span>
+          <strong>The Outcome:</strong> I build platforms that autonomously orchestrate logistics, secure revenue streams, and <strong>dominate markets</strong>.
+        </span>
+      </li>
+
+    </ul>
+  </div>
 </div>
 
 ## 🚀 Flagship Platform: MESS Tracker
