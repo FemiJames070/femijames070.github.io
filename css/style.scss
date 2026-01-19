@@ -1,0 +1,37 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Custom Pro Theme Overrides */
+body { font-family: 'Inter', -apple-system, sans-serif; color: #1a1a1a; }
+
+.hero-banner {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.hero-banner h1 { color: #38bdf8 !important; font-size: 3rem; font-weight: 800; }
+
+.project-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 30px;
+  background: white;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.project-card:hover { transform: translateY(-4px); }
+
+.tag {
+  display: inline-block;
+  background: #f1f5f9;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 4px;
+}
