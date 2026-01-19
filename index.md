@@ -1,7 +1,14 @@
----
-layout: default
-title: Femi James
----
+<section class="hero-section">
+  <div class="hero-content">
+    <span class="badge">AI Engineer & Product Lead</span>
+    <h1>I design, deploy, and scale <strong>AI systems</strong> that work in the real world.</h1>
+    <p class="hero-subtitle">Production-grade, ethical, and scalable AI products — from system architecture to growth.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View My Systems</a>
+      <a href="mailto:femijames070@gmail.com" class="btn-secondary">Let's Talk</a>
+    </div>
+  </div>
+</section>
 
 # I design, deploy, and scale AI systems that work in the real world.
 
