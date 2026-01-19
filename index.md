@@ -90,20 +90,6 @@ title: Oluwafemi (Femi) James
   </div>
 
 <div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
-  
-<div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
-  
-<div class="project-card" style="border-top: 4px solid #0366d6;">
-  
-<div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
-  
-<div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
-  
-<div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
-  
-<div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
-
-<div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
 
   <div style="text-align: center; margin-bottom: 30px;">
     <h2 style="margin-bottom: 5px;">🧠 AI as Infrastructure</h2>
