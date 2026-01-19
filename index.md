@@ -89,6 +89,8 @@ title: Oluwafemi (Femi) James
     </div>
   </div>
 
+  <div class="project-card" style="margin-top: 20px; border-top: 4px solid #0366d6;">
+
   <div style="text-align: center; margin-bottom: 30px;">
     <h2 style="margin-bottom: 5px;">🧠 AI as Infrastructure</h2>
     <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Operational Intelligence (Not a Feature)</p>
@@ -98,7 +100,7 @@ title: Oluwafemi (Femi) James
     AI inside MESS Tracker is an <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language (Multilingual), Risk-analysis (Regression/Classification), and Time-Series</strong> intelligence to automate logistics.
   </p>
 
-  <div style="margin-top: 30px; margin-bottom: 40px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+  <div style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8; border-radius: 2px; overflow: hidden;">
     <img src="/assets/images/ai_pipeline.png" alt="MESS Tracker AI Pipeline" style="width: 100%; display: block;">
     <div style="background: #f6f8fa; padding: 10px 15px; font-size: 0.85rem; color: #586069; border-top: 1px solid #e1e4e8;">
       <strong>Figure 2: The ML Pipeline.</strong> Data ingestion (ETL), Multi-model training (RoBERTa, YOLOv11, LSTM), and Cloud Deployment.
