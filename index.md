@@ -82,10 +82,30 @@ title: Oluwafemi (Femi) James
     <span class="tech-tag">Docker</span>
   </div>
 
-  <div style="margin-top: 20px; text-align: right;">
-    <a href="/projects/mess-tracker" style="font-weight: bold; text-decoration: none;">View Technical Architecture →</a>
-    <span style="font-size: 0.85rem; color: #6a737d; margin-left: 10px;">🔒 IP Protected</span>
+  <div style="margin-top: 30px; margin-bottom: 20px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+    <img src="/assets/images/technical_architecture_diagram.png" alt="MESS Tracker End-to-End Architecture" style="width: 100%; display: block;">
+    <div style="background: #f6f8fa; padding: 10px 15px; font-size: 0.85rem; color: #586069; border-top: 1px solid #e1e4e8;">
+      <strong>Figure 1:</strong> The "End-to-End" Orchestration Flow: Connecting Demand Creation to Settlement.
+    </div>
   </div>
+
+  <div style="margin-top: 20px; text-align: right; display: flex; justify-content: flex-end; align-items: center; gap: 15px;">
+    
+    <a href="#" style="text-decoration: none; color: #24292e; font-size: 0.9rem; display: flex; align-items: center;">
+      <span style="margin-right: 5px;">🎥</span> Watch Demo
+    </a>
+
+    <a href="/projects/mess-tracker" style="font-weight: bold; text-decoration: none; color: #0366d6;">
+      View Technical Architecture →
+    </a>
+    
+    <span style="font-size: 0.85rem; color: #6a737d; background: #f1f5f9; padding: 4px 8px; border-radius: 12px; border: 1px solid #e2e8f0;">
+      🔒 IP Protected
+    </span>
+
+  </div>
+
+</div>
 
 </div>
 
