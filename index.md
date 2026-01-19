@@ -229,8 +229,8 @@ title: Oluwafemi (Femi) James
       </div>
     </div>
 
-    <div onclick="openLightbox('vid', 'assets/videos/predictive_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-      <video class="lazy-video" loop muted playsinline poster="assets/images/user_service_calendar.png" style="width: 100%; display: block; pointer-events: none;">
+    <div onclick="openLightbox('vid', 'assets/videos/predictive_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer; position: relative;">
+      <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_service_calendar.png" style="width: 100%; display: block; pointer-events: none;">
         <source data-src="assets/videos/predictive_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -240,7 +240,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div onclick="openLightbox('vid', 'assets/videos/nlp_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-      <video class="lazy-video" loop muted playsinline poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
+      <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
         <source data-src="assets/videos/nlp_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -250,7 +250,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div onclick="openLightbox('vid', 'assets/videos/cv_waste_sorting.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-      <video class="lazy-video" loop muted playsinline poster="assets/images/user_service_analytics.png" style="width: 100%; display: block; pointer-events: none;">
+      <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_service_analytics.png" style="width: 100%; display: block; pointer-events: none;">
         <source data-src="assets/videos/cv_waste_sorting.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -260,7 +260,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div onclick="openLightbox('vid', 'assets/videos/dispatch_management.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-      <video class="lazy-video" loop muted playsinline poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
+      <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
         <source data-src="assets/videos/dispatch_management.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -301,7 +301,7 @@ title: Oluwafemi (Femi) James
       vid.id = "lightbox-content";
       vid.controls = true; 
       vid.autoplay = true; 
-      // Important: No 'playsinline' here so it can go fullscreen if desired
+      // Remove 'playsinline' here so it can go native fullscreen if user wants
       container.appendChild(vid);
     }
 
@@ -324,24 +324,36 @@ title: Oluwafemi (Femi) James
         entries.forEach(function(video) {
           if (video.isIntersecting) {
             // Video entered view
-            for (var source in video.target.children) {
-              var videoSource = video.target.children[source];
-              if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
-                if (videoSource.dataset.src) {
-                  videoSource.src = videoSource.dataset.src;
-                  delete videoSource.dataset.src; 
+            var sources = video.target.querySelectorAll('source');
+            sources.forEach(function(source) {
+                if (source.dataset.src) {
+                  source.src = source.dataset.src;
+                  delete source.dataset.src; 
                 }
-              }
-            }
+            });
+            
             video.target.load();
             video.target.classList.remove("lazy-video");
-            video.target.play(); 
+            
+            // Force play promise to handle browser restrictions
+            var playPromise = video.target.play();
+            if (playPromise !== undefined) {
+              playPromise.then(_ => {
+                // Autoplay started!
+              }).catch(error => {
+                // Auto-play was prevented.
+                // This usually happens if 'muted' is missing or user interaction is required.
+                // Our videos are muted, so this should generally pass.
+                console.log("Autoplay prevented:", error);
+              });
+            }
+
           } else {
             // Video left view -> Pause it
              video.target.pause();
           }
         });
-      }, { threshold: 0.5 }); // Trigger when 50% visible
+      }, { threshold: 0.1 }); // Trigger as soon as 10% is visible (Start loading earlier)
 
       lazyVideos.forEach(function(lazyVideo) {
         videoObserver.observe(lazyVideo);
