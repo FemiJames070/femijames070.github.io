@@ -101,7 +101,7 @@ title: Oluwafemi (Femi) James
   </p>
 
   <div style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8; border-radius: 2px; overflow: hidden;">
-    <img src="/assets/images/ai_pipeline.svg" alt="MESS Tracker AI Pipeline" style="width: 100%; display: block;">
+    <img src="/assets/images/ai_pipeline2.png" alt="MESS Tracker AI Pipeline" style="width: 100%; display: block;">
     <div style="background: #f6f8fa; padding: 10px 15px; font-size: 0.85rem; color: #586069; border-top: 1px solid #e1e4e8;">
       <strong>Figure 2: The ML Pipeline.</strong> Data ingestion (ETL), Multi-model training (RoBERTa, YOLOv11, LSTM), and Cloud Deployment.
     </div>
