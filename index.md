@@ -150,6 +150,44 @@ title: Oluwafemi (Femi) James
 
 </div>
 
+<style>
+  /* Hidden by default */
+  #lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* The content (image/video) inside modal */
+  #lightbox-content {
+    max-width: 95%;
+    max-height: 80vh;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  }
+
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+  }
+</style>
+
 <div class="project-card" style="margin-top: 40px; border-top: 4px solid #f6ad55;">
   
   <div style="text-align: center; margin-bottom: 30px;">
@@ -160,70 +198,74 @@ title: Oluwafemi (Femi) James
   <p>
     The User Interface is the bridge between the AI models and the real world. Below is the operational workflow: <strong>Dashboarding → Predictive Planning → AI Automation → Final Dispatch.</strong>
   </p>
+  
+  <p style="text-align: center; font-size: 0.85rem; color: #d03801; font-weight: bold; margin-bottom: 20px;">
+    👆 Tap any slide below to view full screen
+  </p>
 
-  <div style="display: flex; overflow-x: auto; gap: 20px; padding-bottom: 20px; margin-top: 30px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+  <div style="display: flex; overflow-x: auto; gap: 20px; padding-bottom: 20px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
     
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+    <div onclick="openLightbox('img', 'assets/images/user_dashboard_overview.png')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
       <img src="assets/images/user_dashboard_overview.png" alt="User Dashboard Overview" style="width: 100%; display: block;">
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #24292e;">1. User Command Center</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">Service shortcuts and a Multilingual AI Chatbot for instant support.</span>
+        <span style="font-size: 0.85rem; color: #586069;">Service shortcuts and a Multilingual AI Chatbot.</span>
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+    <div onclick="openLightbox('img', 'assets/images/user_service_analytics.png')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
       <img src="assets/images/user_service_analytics.png" alt="Analytics" style="width: 100%; display: block;">
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #0366d6;">2. Live Analytics & Forecasts</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">7/14/30-day demand forecasting powered by Time-Series models.</span>
+        <span style="font-size: 0.85rem; color: #586069;">7/14/30-day demand forecasting models.</span>
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+    <div onclick="openLightbox('img', 'assets/images/user_service_calendar.png')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
       <img src="assets/images/user_service_calendar.png" alt="Smart Calendar" style="width: 100%; display: block;">
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #0366d6;">3. Smart Scheduling Calendar</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">One-click scheduling based on Risk Analysis (Classification/Regression).</span>
+        <span style="font-size: 0.85rem; color: #586069;">Risk Analysis based scheduling.</span>
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_service_calendar.png" style="width: 100%; display: block;">
-        <source src="assets/videos/predictive_scheduling.mp4" type="video/mp4">
+    <div onclick="openLightbox('vid', 'assets/videos/predictive_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
+      <video class="lazy-video" loop muted playsinline poster="assets/images/user_service_calendar.png" style="width: 100%; display: block; pointer-events: none;">
+        <source data-src="assets/videos/predictive_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">4. Demo: Predictive Scheduling</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">Processing structured data to suggest optimal slots.</span>
+        <span style="font-size: 0.85rem; color: #586069;">Processing structured data to suggest slots.</span>
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
-        <source src="assets/videos/nlp_scheduling.mp4" type="video/mp4">
+    <div onclick="openLightbox('vid', 'assets/videos/nlp_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
+      <video class="lazy-video" loop muted playsinline poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
+        <source data-src="assets/videos/nlp_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">5. Demo: NLP Scheduling</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">Converting unstructured text requests into calendar events.</span>
+        <span style="font-size: 0.85rem; color: #586069;">Converting text requests into events.</span>
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_service_analytics.png" style="width: 100%; display: block;">
-        <source src="assets/videos/cv_waste_sorting.mp4" type="video/mp4">
+    <div onclick="openLightbox('vid', 'assets/videos/cv_waste_sorting.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
+      <video class="lazy-video" loop muted playsinline poster="assets/images/user_service_analytics.png" style="width: 100%; display: block; pointer-events: none;">
+        <source data-src="assets/videos/cv_waste_sorting.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">6. Demo: Computer Vision</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">Automated waste identification and sorting validation.</span>
+        <span style="font-size: 0.85rem; color: #586069;">Automated waste identification.</span>
       </div>
     </div>
 
-    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
-        <source src="assets/videos/dispatch_management.mp4" type="video/mp4">
+    <div onclick="openLightbox('vid', 'assets/videos/dispatch_management.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
+      <video class="lazy-video" loop muted playsinline poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
+        <source data-src="assets/videos/dispatch_management.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #159957;">7. Demo: Dispatch Execution</strong><br>
-        <span style="font-size: 0.85rem; color: #586069;">Routing the finalized task to a driver for execution.</span>
+        <span style="font-size: 0.85rem; color: #586069;">Routing the finalized task.</span>
       </div>
     </div>
 
@@ -234,6 +276,79 @@ title: Oluwafemi (Femi) James
   </p>
 
 </div>
+
+<div id="lightbox-modal" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <div id="lightbox-container" style="display: flex; justify-content: center; width: 100%; align-items: center; height: 100%;"></div>
+</div>
+
+<script>
+  // --- 1. Lightbox Logic ---
+  function openLightbox(type, src) {
+    var modal = document.getElementById("lightbox-modal");
+    var container = document.getElementById("lightbox-container");
+    
+    container.innerHTML = ""; // Clear previous
+
+    if (type === 'img') {
+      var img = document.createElement("img");
+      img.src = src;
+      img.id = "lightbox-content";
+      container.appendChild(img);
+    } else if (type === 'vid') {
+      var vid = document.createElement("video");
+      vid.src = src;
+      vid.id = "lightbox-content";
+      vid.controls = true; 
+      vid.autoplay = true; 
+      // Important: No 'playsinline' here so it can go fullscreen if desired
+      container.appendChild(vid);
+    }
+
+    modal.style.display = "flex";
+  }
+
+  function closeLightbox() {
+    var modal = document.getElementById("lightbox-modal");
+    var container = document.getElementById("lightbox-container");
+    modal.style.display = "none";
+    container.innerHTML = ""; // Stop video playback
+  }
+
+  // --- 2. Lazy Load & Smart Auto-Play Logic ---
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy-video"));
+
+    if ("IntersectionObserver" in window) {
+      var videoObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(video) {
+          if (video.isIntersecting) {
+            // Video entered view
+            for (var source in video.target.children) {
+              var videoSource = video.target.children[source];
+              if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                if (videoSource.dataset.src) {
+                  videoSource.src = videoSource.dataset.src;
+                  delete videoSource.dataset.src; 
+                }
+              }
+            }
+            video.target.load();
+            video.target.classList.remove("lazy-video");
+            video.target.play(); 
+          } else {
+            // Video left view -> Pause it
+             video.target.pause();
+          }
+        });
+      }, { threshold: 0.5 }); // Trigger when 50% visible
+
+      lazyVideos.forEach(function(lazyVideo) {
+        videoObserver.observe(lazyVideo);
+      });
+    }
+  });
+</script>
 
 <div class="project-card" style="margin-top: 40px; border-top: 4px solid #6f42c1;">
   
