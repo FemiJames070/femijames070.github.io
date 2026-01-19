@@ -1,0 +1,60 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* OVERRIDES FOR PRO LOOK */
+.main-content {
+  max-width: 54rem; /* Makes the text wider */
+  padding: 2rem 1rem;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.project-title-row h3 {
+  margin: 0;
+  color: #159957; /* Cayman Green Accent */
+}
+
+.tag-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.tech-tag {
+  background-color: #f3f6f9;
+  color: #24292e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #e1e4e8;
+}
+
+.hero-box {
+  background: #1e293b;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.hero-box h1 { color: #ffffff; margin-top: 0; }
+.hero-box p { color: #cbd5e1; font-size: 1.2rem; }
