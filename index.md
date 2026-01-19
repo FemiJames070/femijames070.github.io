@@ -4,8 +4,12 @@ title: Oluwafemi (Femi) James
 ---
 
 <div class="hero-box">
-<h1>I design and ship AI-powered platforms that operate in the real world.</h1>
-<p>I architect production-ready systems that coordinate users, data, AI, and operations.</p>
+<h1>I engineer AI digital operating systems that turn manual industries into AI-driven markets.</h1>
+<p>
+  I use <strong>Full-Stack Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution</strong>.
+  I architect <strong>multi-tenant, asset-light infrastructure</strong> where <strong>NLP, Computer Vision, and Predictive Models</strong> (Regression, Classification, Time-Series) act as the connective tissue. 
+  I build platforms that autonomously orchestrate logistics, secure revenue streams, scale operations and through <strong>Generative Growth (GEO)</strong>, dominate search results.
+</p>
 </div>
 
 ## 🚀 Flagship Platform: MESS Tracker
