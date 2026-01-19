@@ -8,7 +8,7 @@ title: Oluwafemi (Femi) James
 <p>
   I use <strong>Full-Stack Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution</strong>.
   I architect <strong>multi-tenant, asset-light infrastructure</strong> where <strong>NLP, Computer Vision, and Predictive Models</strong> (Regression, Classification, Time-Series) act as the connective tissue. 
-  I build platforms that autonomously orchestrate logistics, secure revenue streams, scale operations and through <strong>Generative Growth (GEO)</strong>, dominate search results.
+  I build platforms that autonomously orchestrate logistics, secure revenue streams and scale operations.
 </p>
 </div>
 
