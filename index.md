@@ -89,27 +89,6 @@ title: Oluwafemi (Femi) James
     </div>
   </div>
 
-  <div style="margin-top: 20px; text-align: right; display: flex; justify-content: flex-end; align-items: center; gap: 15px;">
-    
-    <a href="#" style="text-decoration: none; color: #24292e; font-size: 0.9rem; display: flex; align-items: center;">
-      <span style="margin-right: 5px;">🎥</span> Watch Demo
-    </a>
-
-    <a href="/projects/mess-tracker" style="font-weight: bold; text-decoration: none; color: #0366d6;">
-      View Technical Architecture →
-    </a>
-    
-    <span style="font-size: 0.85rem; color: #6a737d; background: #f1f5f9; padding: 4px 8px; border-radius: 12px; border: 1px solid #e2e8f0;">
-      🔒 IP Protected
-    </span>
-
-  </div>
-
-</div>
-
-</div>
-
-
 <div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
   
   <h3 style="margin-top: 0;">🧠 AI as Infrastructure</h3>
