@@ -93,51 +93,101 @@ title: Oluwafemi (Femi) James
   
 <div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
   
-  <h3 style="margin-top: 0;">🧠 AI as Infrastructure (Not a Feature)</h3>
-  <p>AI inside MESS Tracker is an <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language, and Time-Series</strong> intelligence to automate logistics.</p>
+<div class="project-card" style="border-top: 4px solid #0366d6;">
+  
+  <h3 style="margin-top: 0;">🧠 AI as Infrastructure</h3>
+  <p>AI inside MESS Tracker is <strong>operational infrastructure</strong>. It coordinates <strong>Vision, Language, and Time-Series</strong> intelligence to automate logistics.</p>
 
-  <div style="margin: 30px 0; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
-    <img src="/assets/images/ai_pipeline.png" alt="MESS Tracker AI Pipeline: Data Ingestion to Deployment" style="width: 100%; display: block;">
-    <div style="background: #f6f8fa; padding: 10px 15px; font-size: 0.85rem; color: #586069; border-top: 1px solid #e1e4e8;">
-      <strong>Figure 2: The ML Pipeline.</strong> Data ingestion (ETL), Multi-model training (RoBERTa, YOLOv11, LSTM), and Cloud Deployment on Azure/Flask.
-    </div>
+  <div class="mermaid" style="margin: 30px 0;">
+    graph LR
+    %% --- STYLING ---
+    classDef base fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef process fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef model fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef deploy fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+    classDef output fill:#2d3748,stroke:#1a202c,stroke-width:2px,color:#fff;
+
+    %% 1. DATA
+    subgraph Data [Data Ingestion]
+        direction TB
+        Raw[(Raw Data)]:::base
+        ETL(⚙️ ETL Engine):::process
+        Raw --> ETL
+    end
+
+    %% 2. PARALLEL INTELLIGENCE LANES
+    subgraph Vision_Lane [LANE A: Vision]
+        direction LR
+        YOLO_Tr(🏋️ Train: YOLOv11):::model
+        YOLO_Out(👁️ Segmentation):::output
+        ETL --> YOLO_Tr --> YOLO_Out
+    end
+
+    subgraph NLP_Lane [LANE B: NLP]
+        direction LR
+        BERT(🧠 RoBERTa):::model
+        GPT(🤖 GPT-2):::model
+        NLP_Out(🗣️ Intent/FAQ):::output
+        ETL --> BERT --> NLP_Out
+        ETL --> GPT --> NLP_Out
+    end
+
+    subgraph Time_Lane [LANE C: Predictive]
+        direction LR
+        LSTM(📈 LSTM/GRU):::model
+        Time_Out(⏱️ Schedule Ops):::output
+        ETL --> LSTM --> Time_Out
+    end
+
+    %% 3. DEPLOYMENT
+    subgraph Deploy [Production]
+        direction TB
+        Flask(🚀 Flask API):::deploy
+        Azure(☁️ Azure Cloud):::deploy
+        
+        YOLO_Out --> Flask
+        NLP_Out --> Flask
+        Time_Out --> Flask
+        Flask --> Azure
+    end
   </div>
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+  <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
 
-    <div style="border: 1px solid #e1e4e8; padding: 20px; border-radius: 6px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+
+    <div>
       <h4 style="margin: 0 0 10px 0; color: #0366d6;">💬 NLP & Transformers</h4>
-      <p style="font-size: 0.9rem; color: #586069; margin-bottom: 10px;">
-        <strong>Intent Recognition:</strong> Acts as the "Front Door," routing unstructured requests to the correct DB tables.
+      <p style="font-size: 0.9rem; color: #586069;">
+        <strong>Intent Recognition:</strong> Acts as the "Front Door," routing unstructured requests to DB tables.
       </p>
       <div style="margin-top: 10px;">
-        <span class="tech-tag" style="font-size: 0.75rem;">RoBERTa (Classification)</span>
-        <span class="tech-tag" style="font-size: 0.75rem;">SpaCy (NER)</span>
-        <span class="tech-tag" style="font-size: 0.75rem;">GPT-2 (FAQ)</span>
+        <span class="tech-tag">RoBERTa</span>
+        <span class="tech-tag">SpaCy</span>
+        <span class="tech-tag">GPT-2</span>
       </div>
     </div>
 
-    <div style="border: 1px solid #e1e4e8; padding: 20px; border-radius: 6px;">
+    <div>
       <h4 style="margin: 0 0 10px 0; color: #0366d6;">👁️ Computer Vision</h4>
-      <p style="font-size: 0.9rem; color: #586069; margin-bottom: 10px;">
-        <strong>Automated Inspection:</strong> Real-time waste classification and contamination detection at the source.
+      <p style="font-size: 0.9rem; color: #586069;">
+        <strong>Automated Inspection:</strong> Real-time waste classification and contamination detection.
       </p>
       <div style="margin-top: 10px;">
-        <span class="tech-tag" style="font-size: 0.75rem;">YOLOv11</span>
-        <span class="tech-tag" style="font-size: 0.75rem;">Segmentation</span>
-        <span class="tech-tag" style="font-size: 0.75rem;">OpenCV</span>
+        <span class="tech-tag">YOLOv11</span>
+        <span class="tech-tag">Segmentation</span>
+        <span class="tech-tag">OpenCV</span>
       </div>
     </div>
 
-    <div style="border: 1px solid #e1e4e8; padding: 20px; border-radius: 6px;">
+    <div>
       <h4 style="margin: 0 0 10px 0; color: #0366d6;">📈 Predictive Ops</h4>
-      <p style="font-size: 0.9rem; color: #586069; margin-bottom: 10px;">
-        <strong>Demand Forecasting:</strong> Predicting operational load to optimize driver scheduling and asset allocation.
+      <p style="font-size: 0.9rem; color: #586069;">
+        <strong>Demand Forecasting:</strong> Predicting operational load to optimize driver scheduling.
       </p>
       <div style="margin-top: 10px;">
-        <span class="tech-tag" style="font-size: 0.75rem;">SARIMA</span>
-        <span class="tech-tag" style="font-size: 0.75rem;">LSTM / GRU</span>
-        <span class="tech-tag" style="font-size: 0.75rem;">Regression</span>
+        <span class="tech-tag">SARIMA</span>
+        <span class="tech-tag">LSTM / GRU</span>
       </div>
     </div>
 
