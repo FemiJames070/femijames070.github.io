@@ -281,7 +281,9 @@ title: Oluwafemi (Femi) James
             <li><strong>Tech Stack:</strong> Django, YOLOv11, LSTM, SARIMA</li>
             <li><strong>Outcome:</strong> A scalable, AI-driven operating system.</li>
           </ul>
-          <a href="assets/images/mess_poster.png" target="_blank" class="btn" style="font-size: 0.85rem;">View Full Size Poster →</a>
+          <a href="assets/images/mess_poster.png" target="_blank" class="btn" style="font-size: 0.9rem; background-color: #6f42c1; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block; font-weight: 600; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: all 0.2s ease-in-out;">
+  View Full Size Poster →
+</a>
         </div>
 
         <div style="flex: 1; min-width: 300px; background: #f6f8fa; text-align: center;">
