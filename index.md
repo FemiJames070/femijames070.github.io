@@ -164,7 +164,7 @@ title: Oluwafemi (Femi) James
   <div style="display: flex; overflow-x: auto; gap: 20px; padding-bottom: 20px; margin-top: 30px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
     
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <img src="/assets/images/user_dashboard_overview.png" alt="User Dashboard Overview" style="width: 100%; display: block;">
+      <img src="assets/images/user_dashboard_overview.png" alt="User Dashboard Overview" style="width: 100%; display: block;">
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #24292e;">1. User Command Center</strong><br>
         <span style="font-size: 0.85rem; color: #586069;">Service shortcuts and a Multilingual AI Chatbot for instant support.</span>
@@ -172,7 +172,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <img src="/assets/images/user_service_analytics.png" alt="Analytics" style="width: 100%; display: block;">
+      <img src="assets/images/user_service_analytics.png" alt="Analytics" style="width: 100%; display: block;">
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #0366d6;">2. Live Analytics & Forecasts</strong><br>
         <span style="font-size: 0.85rem; color: #586069;">7/14/30-day demand forecasting powered by Time-Series models.</span>
@@ -180,7 +180,7 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <img src="/assets/images/user_service_calendar.png" alt="Smart Calendar" style="width: 100%; display: block;">
+      <img src="assets/images/user_service_calendar.png" alt="Smart Calendar" style="width: 100%; display: block;">
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #0366d6;">3. Smart Scheduling Calendar</strong><br>
         <span style="font-size: 0.85rem; color: #586069;">One-click scheduling based on Risk Analysis (Classification/Regression).</span>
@@ -188,9 +188,8 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls playsinline preload="auto" poster="/assets/images/user_service_calendar.png" style="width: 100%; display: block;">
-        <source src="/assets/videos/predictive_scheduling.mp4" type="video/mp4">
-        <p>Video not loading? <a href="/assets/videos/predictive_scheduling.mp4">Click to download</a></p>
+      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_service_calendar.png" style="width: 100%; display: block;">
+        <source src="assets/videos/predictive_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">4. Demo: Predictive Scheduling</strong><br>
@@ -199,8 +198,8 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls playsinline preload="auto" poster="/assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
-        <source src="/assets/videos/nlp_scheduling.mp4" type="video/mp4">
+      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
+        <source src="assets/videos/nlp_scheduling.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">5. Demo: NLP Scheduling</strong><br>
@@ -209,8 +208,8 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls playsinline preload="auto" poster="/assets/images/user_service_analytics.png" style="width: 100%; display: block;">
-        <source src="/assets/videos/cv_waste_sorting.mp4" type="video/mp4">
+      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_service_analytics.png" style="width: 100%; display: block;">
+        <source src="assets/videos/cv_waste_sorting.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #d03801;">6. Demo: Computer Vision</strong><br>
@@ -219,8 +218,8 @@ title: Oluwafemi (Femi) James
     </div>
 
     <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
-      <video controls playsinline preload="auto" poster="/assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
-        <source src="/assets/videos/dispatch_management.mp4" type="video/mp4">
+      <video controls autoplay loop muted playsinline preload="auto" poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block;">
+        <source src="assets/videos/dispatch_management.mp4" type="video/mp4">
       </video>
       <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
         <strong style="color: #159957;">7. Demo: Dispatch Execution</strong><br>
