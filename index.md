@@ -109,7 +109,7 @@ title: Oluwafemi (Femi) James
   </div>
 
   <p>
-    AI inside MESS Tracker is not experimental—it is <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language (multiligual), and Time-Series</strong> intelligence to automate logistics.
+    AI inside MESS Tracker is an <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language (multiligual), and Time-Series</strong> intelligence to automate logistics.
   </p>
 
   <div style="margin-top: 30px; margin-bottom: 40px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
