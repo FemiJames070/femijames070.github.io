@@ -7,7 +7,7 @@ title: Oluwafemi (Femi) James
   <h1 style="margin-bottom: 25px;">I engineer AI digital operating systems that turn manual industries into AI-driven markets.</h1>
   
   <p style="font-size: 1.25rem; margin-bottom: 35px; color: #e2e8f0;">
-    I use <strong>Full-Stack Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution</strong>.
+    I use <strong>Full-Stack Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution</strong> and I do it with governance, scalability, and ethics built in.
   </p>
 
   <div style="display: inline-block; text-align: left; max-width: 750px; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
