@@ -235,6 +235,66 @@ title: Oluwafemi (Femi) James
 
 </div>
 
+<div class="project-card" style="margin-top: 40px; border-top: 4px solid #6f42c1;">
+  
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="margin-bottom: 5px;">🏆 Real-World Impact</h2>
+    <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Beyond Localhost: Defense & Recognition</p>
+  </div>
+
+  <p>
+    MESS Tracker wasn't just a theoretical exercise. It was a rigorous Capstone project that involved <strong>academic defense, stakeholder presentations, and public showcasing</strong>. It stands as a proof-of-concept for how AI can tangibly modernize municipal infrastructure.
+  </p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
+
+    <div style="border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+      <img src="assets/images/mess_presentation.jpg" alt="Capstone Project Defense" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+      <div style="background: #fff; padding: 15px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #6f42c1;">1. The Technical Defense</strong>
+        <p style="font-size: 0.85rem; color: #586069; margin: 5px 0 0 0;">
+          Presenting the "Three-Gate" Architecture and AI Integration strategy to the review board.
+        </p>
+      </div>
+    </div>
+
+    <div style="border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+      <img src="assets/images/mess_showcase.jpg" alt="Capstone Showcase with Supervisor" style="width: 100%; height: 250px; object-fit: cover; object-position: top; display: block;">
+      <div style="background: #fff; padding: 15px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #6f42c1;">2. Industry Showcase</strong>
+        <p style="font-size: 0.85rem; color: #586069; margin: 5px 0 0 0;">
+          Demonstrating the live MVP alongside Project Supervisor, Reeta Suman, at the Capstone Exhibition.
+        </p>
+      </div>
+    </div>
+
+    <div style="grid-column: 1 / -1; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; margin-top: 10px;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center;">
+        
+        <div style="flex: 1; min-width: 300px; padding: 25px;">
+          <h3 style="margin-top: 0; color: #24292e;">📜 Official Project Poster</h3>
+          <p>
+            The comprehensive breakdown of the <strong>CRISP-DM Methodology</strong> used to build MESS Tracker. 
+          </p>
+          <ul style="font-size: 0.9rem; color: #586069; margin-bottom: 20px;">
+            <li><strong>Methodology:</strong> Phase 1-5 (Business Understanding to Maintenance)</li>
+            <li><strong>Tech Stack:</strong> Django, YOLOv11, LSTM, SARIMA</li>
+            <li><strong>Outcome:</strong> A scalable, AI-driven operating system.</li>
+          </ul>
+          <a href="assets/images/mess_poster.jpg" target="_blank" class="btn" style="font-size: 0.85rem;">View Full Size Poster →</a>
+        </div>
+
+        <div style="flex: 1; min-width: 300px; background: #f6f8fa; text-align: center;">
+          <img src="assets/images/mess_poster.jpg" alt="MESS Tracker Official Poster" style="max-width: 100%; max-height: 500px; display: block; margin: 0 auto;">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
 ## 🏗️ Technical Proof: StrokeRisk
 
 <div class="project-card">
