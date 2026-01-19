@@ -150,6 +150,107 @@ title: Oluwafemi (Femi) James
 
 </div>
 
+<div class="project-card" style="margin-top: 40px; border-top: 4px solid #f6ad55;">
+  
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="margin-bottom: 5px;">🎨 Frontend & AI Visuals</h2>
+    <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Where the Intelligence Meets the User</p>
+  </div>
+
+  <p>
+    The backend intelligence is useless without a control plane. Below is the <strong>Role-Aware Interface</strong> that translates complex AI predictions (NLP, Vision, Forecasting) into simple, actionable alerts for dispatchers and drivers.
+  </p>
+
+  <div style="display: flex; overflow-x: auto; gap: 20px; padding-bottom: 20px; margin-top: 30px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+    
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_dashboard_main.png" alt="Main User Dashboard" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #24292e;">1. The Command Center</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">Aggregates incoming tickets, AI alerts, and map data into a single operational view.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_nlp_input.png" alt="NLP Raw Text Input" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #0366d6;">2. NLP Input (Unstructured)</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">Raw email/chat input from a customer asking for service (Multilingual support enabled).</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_nlp_output.png" alt="NLP Structured Output" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #0366d6;">3. NLP Analysis (Structured)</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">RoBERTa extracts entities (Location, Waste Type, Urgency) and auto-populates the DB fields.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_cv_input.png" alt="Computer Vision Input" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #0366d6;">4. Vision Input (Field Data)</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">Driver uploads a photo of a blocked or contaminated bin via mobile app.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_cv_output.png" alt="Computer Vision Analysis" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #0366d6;">5. Vision Analysis (YOLOv11)</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">System auto-detects "Contamination" (Red Box) and flags the ticket for surcharge.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_pred_chart.png" alt="Forecasting Chart" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #0366d6;">6. Load Forecasting (SARIMA)</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">Time-series visualization predicting waste volume peaks for the upcoming week.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_pred_schedule.png" alt="Optimized Schedule" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #0366d6;">7. Risk-Aware Scheduling</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">System suggests optimal driver shifts based on predicted load and LSTM risk scoring.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_dispatch_map.png" alt="Dispatch Map" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #24292e;">8. Live Dispatch Map</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">Real-time geospatial view of all assets, trucks, and active tickets.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_dispatch_routes.png" alt="Route Planning" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #24292e;">9. Dynamic Routing</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">Drag-and-drop interface to re-assign tasks based on real-time traffic or breakdowns.</span>
+      </div>
+    </div>
+
+    <div style="min-width: 40%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0;">
+      <img src="/assets/images/fe_mobile_app.png" alt="Driver App" style="width: 100%; display: block;">
+      <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
+        <strong style="color: #24292e;">10. Driver Execution</strong><br>
+        <span style="font-size: 0.85rem; color: #586069;">The end-point. Drivers receive "Go/No-Go" tasks on mobile.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="text-align: center; font-size: 0.85rem; color: #999; margin-top: 5px;">
+    (Swipe or Scroll right to view AI & Dispatch capabilities) →
+  </p>
+
+</div>
+
 ## 🏗️ Technical Proof: StrokeRisk
 
 <div class="project-card">
