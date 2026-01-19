@@ -94,7 +94,7 @@ title: Oluwafemi (Femi) James
 <div class="project-card" style="margin-top: 40px; border-top: 4px solid #0366d6;">
   
   <h3 style="margin-top: 0;">🧠 AI as Infrastructure (Not a Feature)</h3>
-  <p>AI inside MESS Tracker is not experimental, it is <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language, and Time-Series</strong> intelligence to automate logistics.</p>
+  <p>AI inside MESS Tracker is an <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language, and Time-Series</strong> intelligence to automate logistics.</p>
 
   <div style="margin: 30px 0; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
     <img src="/assets/images/ai_pipeline.png" alt="MESS Tracker AI Pipeline: Data Ingestion to Deployment" style="width: 100%; display: block;">
