@@ -285,7 +285,7 @@ title: Oluwafemi (Femi) James
         </div>
 
         <div style="flex: 1; min-width: 300px; background: #f6f8fa; text-align: center;">
-          <img src="assets/images/mess_poster.jpg" alt="MESS Tracker Official Poster" style="max-width: 100%; max-height: 500px; display: block; margin: 0 auto;">
+          <img src="assets/images/mess_poster.png" alt="MESS Tracker Official Poster" style="max-width: 100%; max-height: 500px; display: block; margin: 0 auto;">
         </div>
 
       </div>
