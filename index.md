@@ -150,66 +150,66 @@ title: Oluwafemi (Femi) James
       </div>
     </div>
 
-    <div class="project-card" style="margin-top: 20px; border-top: 4px solid #0366d6; box-shadow: none; padding: 0;">
+    <div class="project-card" style="margin-top: 20px; border-top: 4px solid #0366d6; box-shadow: none; padding: 25px;">
 
-    <div style="text-align: center; margin-bottom: 30px;">
-      <h2 style="margin-bottom: 5px;">AI as Infrastructure</h2>
-      <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Operational Intelligence (Not a Feature)</p>
-    </div>
-
-    <p>
-      AI inside MESS Tracker is an <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language (Multilingual), Risk-analysis (Regression/Classification), and Time-Series</strong> intelligence to automate logistics.
-    </p>
-
-    <div style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8; border-radius: 2px; overflow: hidden;">
-      <img src="/assets/images/ai-pipeline2.png" alt="MESS Tracker AI Pipeline" style="width: 100%; display: block;">
-      <div style="background: #f6f8fa; padding: 10px 15px; font-size: 0.85rem; color: #586069; border-top: 1px solid #e1e4e8;">
-        <strong>Figure 2: The ML Pipeline.</strong> Data ingestion (ETL), Multi-model training (RoBERTa, YOLOv11, LSTM), and Cloud Deployment.
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h2 style="margin-bottom: 5px;">AI as Infrastructure</h2>
+        <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Operational Intelligence (Not a Feature)</p>
       </div>
-    </div>
 
-    <h3 style="border-bottom: 1px solid #eaecef; padding-bottom: 10px; margin-bottom: 20px;">Implemented Capabilities</h3>
+      <p>
+        AI inside MESS Tracker is an <strong>operational infrastructure</strong> embedded directly into the "Three-Gate" workflow. It coordinates <strong>Vision, Language (Multilingual), Risk-analysis (Regression/Classification), and Time-Series</strong> intelligence to automate logistics.
+      </p>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-
-      <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
-        <h4 style="margin-top: 0; color: #24292e;">💬 NLP & Transformers</h4>
-        <p style="font-size: 0.9rem; margin-bottom: 15px;">
-          <strong>Intent Recognition:</strong> Acts as the "Front Door," routing unstructured requests to DB tables.
-        </p>
-        <div>
-          <span class="tech-tag">RoBERTa</span>
-          <span class="tech-tag">SpaCy</span>
-          <span class="tech-tag">GPT-2</span>
+      <div style="margin-top: 10px; margin-bottom: 10px; border: 1px solid #e1e4e8; border-radius: 2px; overflow: hidden;">
+        <img src="/assets/images/ai-pipeline2.png" alt="MESS Tracker AI Pipeline" style="width: 100%; display: block;">
+        <div style="background: #f6f8fa; padding: 10px 15px; font-size: 0.85rem; color: #586069; border-top: 1px solid #e1e4e8;">
+          <strong>Figure 2: The ML Pipeline.</strong> Data ingestion (ETL), Multi-model training (RoBERTa, YOLOv11, LSTM), and Cloud Deployment.
         </div>
       </div>
 
-      <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
-        <h4 style="margin-top: 0; color: #24292e;">👁️ Computer Vision</h4>
-        <p style="font-size: 0.9rem; margin-bottom: 15px;">
-          <strong>Automated Inspection:</strong> Real-time waste classification and contamination detection.
-        </p>
-        <div>
-          <span class="tech-tag">YOLOv11</span>
-          <span class="tech-tag">Segmentation</span>
-          <span class="tech-tag">OpenCV</span>
-        </div>
-      </div>
+      <h3 style="border-bottom: 1px solid #eaecef; padding-bottom: 10px; margin-bottom: 20px;">Implemented Capabilities</h3>
 
-      <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
-        <h4 style="margin-top: 0; color: #24292e;">📈 Predictive Ops</h4>
-        <p style="font-size: 0.9rem; margin-bottom: 15px;">
-          <strong>Demand Forecasting:</strong> Predicting operational load to optimize driver scheduling.
-        </p>
-        <div>
-          <span class="tech-tag">SARIMA</span>
-          <span class="tech-tag">LSTM / GRU</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+
+        <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
+          <h4 style="margin-top: 0; color: #24292e;">💬 NLP & Transformers</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 15px;">
+            <strong>Intent Recognition:</strong> Acts as the "Front Door," routing unstructured requests to DB tables.
+          </p>
+          <div>
+            <span class="tech-tag">RoBERTa</span>
+            <span class="tech-tag">SpaCy</span>
+            <span class="tech-tag">GPT-2</span>
+          </div>
         </div>
+
+        <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
+          <h4 style="margin-top: 0; color: #24292e;">👁️ Computer Vision</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 15px;">
+            <strong>Automated Inspection:</strong> Real-time waste classification and contamination detection.
+          </p>
+          <div>
+            <span class="tech-tag">YOLOv11</span>
+            <span class="tech-tag">Segmentation</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+        </div>
+
+        <div style="background: #f6f8fa; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8;">
+          <h4 style="margin-top: 0; color: #24292e;">📈 Predictive Ops</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 15px;">
+            <strong>Demand Forecasting:</strong> Predicting operational load to optimize driver scheduling.
+          </p>
+          <div>
+            <span class="tech-tag">SARIMA</span>
+            <span class="tech-tag">LSTM / GRU</span>
+          </div>
+        </div>
+
       </div>
 
     </div>
-
-  </div>
 
   <style>
     /* Hidden by default */
@@ -249,9 +249,9 @@ title: Oluwafemi (Femi) James
     }
   </style>
 
-  <div class="project-card" style="margin-top: 40px; border-top: 4px solid #f6ad55; box-shadow: none; padding: 0;">
+  <div class="project-card" style="margin-top: 40px; border-top: 4px solid #f6ad55; box-shadow: none; padding: 25px;">
     
-    <div style="text-align: center; margin-bottom: 30px; margin-top: 30px;">
+    <div style="text-align: center; margin-bottom: 30px; margin-top: 10px;">
       <h2 style="margin-bottom: 5px;">🎨 Frontend & Execution</h2>
       <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">From Insight to Automation</p>
     </div>
@@ -421,9 +421,9 @@ title: Oluwafemi (Femi) James
     });
   </script>
 
-  <div class="project-card" style="margin-top: 40px; border-top: 4px solid #6f42c1; box-shadow: none; padding: 0;">
+  <div class="project-card" style="margin-top: 40px; border-top: 4px solid #6f42c1; box-shadow: none; padding: 25px;">
     
-    <div style="text-align: center; margin-bottom: 30px; margin-top: 30px;">
+    <div style="text-align: center; margin-bottom: 30px; margin-top: 10px;">
       <h2 style="margin-bottom: 5px;">🏆 Real-World Impact</h2>
       <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Beyond Localhost: Defense & Recognition</p>
     </div>
