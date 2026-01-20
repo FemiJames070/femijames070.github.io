@@ -508,11 +508,16 @@ title: Oluwafemi (Femi) James
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-top: 30px;">
 
-      <div style="border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+      <div style="border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
         <div style="background: #f6f8fa; padding: 15px; border-bottom: 1px solid #e1e4e8;">
           <h3 style="margin: 0; font-size: 1.1rem; color: #24292e;">⚙️ Phase 1: The Ensemble Innovation</h3>
         </div>
-        <div style="padding: 20px;">
+        
+        <div style="width: 100%; height: 220px; overflow: hidden; border-bottom: 1px solid #eaecef;">
+             <img src="assets/images/phase_1_team.jpg" alt="Phase 1 Development Team" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+
+        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
           <p style="font-size: 0.9rem; color: #586069; margin-bottom: 15px;">
             To tackle the "Accuracy Paradox" in medical AI (where 95% accuracy hides missed diagnoses), we rejected single models in favor of a <strong>Soft-Voting Ensemble</strong>.
           </p>
@@ -523,7 +528,7 @@ title: Oluwafemi (Femi) James
             <li><strong>The Result:</strong> The ensemble stabilized variance and maximized Recall (Safety).</li>
           </ul>
 
-          <div style="display: flex; gap: 10px; margin-top: 15px;">
+          <div style="display: flex; gap: 10px; margin-top: auto;">
              <span class="tech-tag" style="background: #e1e4e8; color: #000;">PyCaret</span>
              <span class="tech-tag" style="background: #e1e4e8; color: #000;">SMOTE</span>
              <span class="tech-tag" style="background: #e1e4e8; color: #000;">XGBoost</span>
@@ -531,11 +536,16 @@ title: Oluwafemi (Femi) James
         </div>
       </div>
 
-      <div style="border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+      <div style="border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
         <div style="background: #f6f8fa; padding: 15px; border-bottom: 1px solid #e1e4e8;">
           <h3 style="margin: 0; font-size: 1.1rem; color: #24292e;">🛡️ Phase 2: Governance-as-Code</h3>
         </div>
-        <div style="padding: 20px;">
+
+        <div style="width: 100%; height: 220px; overflow: hidden; border-bottom: 1px solid #eaecef;">
+             <img src="assets/images/phase_2_team.jpg" alt="Phase 2 MLOps Team" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        </div>
+
+        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
           <p style="font-size: 0.9rem; color: #586069; margin-bottom: 15px;">
             We didn't just train a model; we built an immutable audit trail using <strong>MLflow</strong> to satisfy <strong>PIPEDA & FDA SaMD</strong> reproducibility guidelines.
           </p>
@@ -546,7 +556,7 @@ title: Oluwafemi (Femi) James
             <li><strong>Gated Promotion:</strong> Implemented a strict <em>Staging &rarr; Production</em> workflow requiring governance approval.</li>
           </ul>
 
-          <div style="display: flex; gap: 10px; margin-top: 15px;">
+          <div style="display: flex; gap: 10px; margin-top: auto;">
              <span class="tech-tag" style="background: #e53e3e; color: #fff;">MLflow</span>
              <span class="tech-tag" style="background: #e53e3e; color: #fff;">CI/CD</span>
              <span class="tech-tag" style="background: #e53e3e; color: #fff;">Audit Logs</span>
