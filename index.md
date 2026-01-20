@@ -424,23 +424,66 @@ title: Oluwafemi (Femi) James
 
 </div>
 
-## 🏗️ Technical Proof: StrokeRisk
+<div class="project-card" style="border-top: 4px solid #e53e3e;">
+  
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="margin-bottom: 5px;">Collaborative Intelligence: StrokeRisk</h2>
+    <p style="color: #586069; font-size: 1.1rem; margin-top: 0;">Clinical Decision Support & MLOps Governance</p>
+  </div>
 
-<div class="project-card">
-<div class="project-title-row">
-<h3>StrokeRisk System</h3>
-<small>Clinical Decision Support</small>
-</div>
+  <p>
+    While MESS Tracker demonstrates my solo architectural capabilities, <strong>StrokeRisk</strong> highlights my ability to operate within and lead a <strong>cross-functional agile team (G4 Pulse)</strong>. We engineered a regulated clinical decision-support system, strictly adhering to the <strong>CRISP-DM Lifecycle</strong> to move from raw patient data to a deployed, auditable application.
+  </p>
 
-<p>An end-to-end clinical decision-support system featuring explainable AI (SHAP) and model monitoring built using the CRISP-DM lifecycle.</p>
+  <h3 style="border-bottom: 1px solid #eaecef; padding-bottom: 10px; margin-top: 40px;">The "Governance-as-Code" Workflow</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
+    
+    <div style="background: #fff; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8; border-left: 4px solid #e53e3e;">
+      <h4 style="margin-top: 0; color: #24292e;">Phase 1 & 2: Agile Development</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 15px;">
+        Collaborated with diverse stakeholders to define the "Business Problem" (High False Negatives). 
+        <br><br>
+        I led the technical implementation of <strong>SMOTE (Synthetic Minority Over-sampling)</strong> to tackle severe class imbalance (4.9% stroke rate), ensuring the model didn't just bias toward the majority class.
+      </p>
+      <span class="tech-tag">PyCaret</span>
+      <span class="tech-tag">SMOTE</span>
+    </div>
 
-<div class="tag-container">
-<span class="tech-tag">Python</span>
-<span class="tech-tag">Scikit-Learn</span>
-<span class="tech-tag">SHAP (XAI)</span>
-</div>
+    <div style="background: #fff; padding: 20px; border-radius: 6px; border: 1px solid #e1e4e8; border-left: 4px solid #dd6b20;">
+      <h4 style="margin-top: 0; color: #24292e;">Phase 3: Governance & MLOps</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 15px;">
+        Moved beyond simple accuracy by implementing <strong>Governance-as-Code</strong> using <strong>MLflow</strong>. 
+        <br><br>
+        We established an immutable audit trail for every experiment, enforcing version control and reproducibility—critical for compliance in healthcare environments (HIPAA/PIPEDA alignment).
+      </p>
+      <span class="tech-tag">MLflow</span>
+      <span class="tech-tag">Bias Auditing</span>
+    </div>
 
-<a href="/projects/strokerisk" class="btn">View Case Study →</a>
+  </div>
+
+  <div style="margin-top: 30px; background: #f6f8fa; padding: 20px; border-radius: 8px; border: 1px solid #e1e4e8;">
+    <h4 style="margin-top: 0; color: #0366d6;">🏆 The Outcome: Production-Grade Reliability</h4>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+      <div style="flex: 1; min-width: 250px;">
+        <p style="font-size: 0.9rem; margin-bottom: 10px;">
+          After evaluating <strong>14 candidate models</strong> via 5-Fold Stratified Cross-Validation, we deployed a <strong>LightGBM</strong> architecture that achieved market-leading performance:
+        </p>
+        <ul style="font-size: 0.9rem; color: #586069; list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 8px;">✅ <strong>95.53% Accuracy</strong> (Robust vs. Noise)</li>
+          <li style="margin-bottom: 8px;">✅ <strong>0.9909 AUC</strong> (Excellent Discrimination)</li>
+          <li style="margin-bottom: 8px;">✅ <strong>96.18% Recall</strong> (Crucial for Medical Screening)</li>
+        </ul>
+      </div>
+      <div style="flex: 1; min-width: 250px; text-align: center; border-left: 1px solid #e1e4e8; padding-left: 20px;">
+        <p style="font-size: 0.85rem; color: #586069; margin-bottom: 10px;">Deployed Frontend Interface</p>
+        <img src="assets/images/strokerisk_dashboard_placeholder.png" alt="StrokeRisk Streamlit Dashboard" style="width: 100%; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <a href="https://strokerisk-tool.streamlit.app/" target="_blank" class="btn" style="margin-top: 15px; font-size: 0.85rem; padding: 8px 16px;">Launch Live App 🚀</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 ---
