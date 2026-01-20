@@ -435,7 +435,7 @@ title: Oluwafemi (Femi) James
     <p style="font-size: 1rem; margin: 0; color: #24292e;">
       <strong>The Leadership Context:</strong> While MESS Tracker showcases my solo architectural skills, StrokeRisk demonstrates my ability to lead and integrate within high-performance teams. 
       <br><br>
-      Leading <strong>Group 4 (G4 Pulse): Fuad, Preston, Marrium, and Femi James in our first semester</strong> for development and <strong>Group 2: Kevin, Shalin, Femi James </strong> for MLOps, I orchestrated the transition from a raw dataset to a governed, FDA-aligned deployment. We moved beyond "just coding" to building a compliant, auditable lifecycle.
+      Leading <strong>Group 4 (G4 Pulse): Fuad, Preston and Marrium in our first semester</strong> for development and <strong>Group 2 (G2): Kevin and Shalin in our second semester </strong> for MLOps, I orchestrated the transition from a raw dataset to a governed, FDA-aligned deployment. We moved beyond "just coding" to building a compliant, auditable lifecycle.
     </p>
   </div>
 
@@ -518,7 +518,7 @@ title: Oluwafemi (Femi) James
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
       
       <div style="flex: 1; min-width: 300px;">
-        <h3 style="margin-top: 0; color: #24292e;">Phase 5: Cloud Deployment</h3>
+        <h3 style="margin-top: 0; color: #24292e;">Cloud Deployment</h3>
         <p style="margin-bottom: 20px;">
           The final system was deployed on <strong>Streamlit Cloud</strong>, serving the MLflow-registered model via a REST API. The frontend was designed using <strong>Human-Centered Design</strong> principles (Fogg Behavior Model) to ensure clinician trust.
         </p>
@@ -529,10 +529,13 @@ title: Oluwafemi (Femi) James
           <br>• PDF Report Generation
         </p>
         <div style="margin-top: 25px;">
-          <a href="https://strokerisk-tool.streamlit.app/" target="_blank" class="btn">Launch Live App 🚀</a>
-          <a href="https://github.com/YourUsername/StrokeRisk" target="_blank" style="margin-left: 15px; color: #0366d6; text-decoration: none; font-weight: 600;">View GitHub Repo →</a>
+          <a href="https://strokerisk-tool.streamlit.app/" target="_blank" class="btn" style="background-color: #0366d6; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            Launch Live App 🚀
+          </a>
+          <a href="https://github.com/YourUsername/StrokeRisk" target="_blank" style="margin-left: 15px; color: #0366d6; text-decoration: none; font-weight: 600;">
+            View GitHub Repo →
+          </a>
         </div>
-      </div>
 
       <div style="flex: 1; min-width: 300px;">
         <img src="assets/images/strokerisk_ui_preview.png" alt="StrokeRisk Streamlit Dashboard" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8;">
