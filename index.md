@@ -677,7 +677,25 @@ title: Oluwafemi (Femi) James
 
 <hr style="margin-top: 50px; margin-bottom: 30px; border: 0; border-top: 1px solid #eaecef;">
 
-### 📬 Let's Talk
-**Ready to build for the real world?** Currently in Calgary, AB | Available for Senior Engineering & Platform Leadership.
+<div style="margin-top: 60px; margin-bottom: 40px; padding: 50px 30px; background: #f6f8fa; border-radius: 8px; border: 1px solid #e1e4e8; text-align: center;">
+  
+  <h2 style="color: #24292e; margin-top: 0; margin-bottom: 15px; font-size: 2rem;">Ready to build for the real world?</h2>
+  
+  <p style="font-size: 1.15rem; color: #586069; margin-bottom: 35px; line-height: 1.6;">
+    I am currently based in <strong>Calgary, AB</strong> and available for <br>
+    <strong style="color: #0366d6;">Senior Engineering & Platform Leadership</strong> roles.
+  </p>
+  
+  <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+    
+    <a href="mailto:femijames070@gmail.com" class="btn" style="background-color: #24292e; color: #ffffff; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.05rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+      📬 Send me an Email
+    </a>
 
-[Email Me](mailto:femijames070@gmail.com) • [LinkedIn](https://www.linkedin.com/in/femijames/)
+    <a href="https://www.linkedin.com/in/femijames/" target="_blank" class="btn" style="background-color: #ffffff; color: #0077b5; border: 1px solid #0077b5; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.05rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: background-color 0.2s ease;">
+      in Connect on LinkedIn
+    </a>
+
+  </div>
+
+</div>
