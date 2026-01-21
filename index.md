@@ -291,7 +291,7 @@ title: Oluwafemi (Femi) James
       </div>
 
       <div onclick="openLightbox('vid', 'assets/videos/predictive_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer; position: relative;">
-        <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_service_calendar.png" style="width: 100%; display: block; pointer-events: none;">
+        <video class="lazy-video" controls muted loop playsinline poster="assets/images/user_service_calendar.png" style="width: 100%; display: block; pointer-events: none;">
           <source data-src="assets/videos/predictive_scheduling.mp4" type="video/mp4">
         </video>
         <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -301,7 +301,7 @@ title: Oluwafemi (Femi) James
       </div>
 
       <div onclick="openLightbox('vid', 'assets/videos/nlp_scheduling.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-        <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
+        <video class="lazy-video" controls muted loop playsinline poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
           <source data-src="assets/videos/nlp_scheduling.mp4" type="video/mp4">
         </video>
         <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -311,7 +311,7 @@ title: Oluwafemi (Femi) James
       </div>
 
       <div onclick="openLightbox('vid', 'assets/videos/cv_waste_sorting.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-        <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_service_analytics.png" style="width: 100%; display: block; pointer-events: none;">
+        <video class="lazy-video" controls muted loop playsinline poster="assets/images/user_service_analytics.png" style="width: 100%; display: block; pointer-events: none;">
           <source data-src="assets/videos/cv_waste_sorting.mp4" type="video/mp4">
         </video>
         <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -321,7 +321,7 @@ title: Oluwafemi (Femi) James
       </div>
 
       <div onclick="openLightbox('vid', 'assets/videos/dispatch_management.mp4')" style="min-width: 85%; scroll-snap-align: center; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer;">
-        <video class="lazy-video" muted loop playsinline controls poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
+        <video class="lazy-video" controls muted loop playsinline poster="assets/images/user_dashboard_overview.png" style="width: 100%; display: block; pointer-events: none;">
           <source data-src="assets/videos/dispatch_management.mp4" type="video/mp4">
         </video>
         <div style="background: #fff; padding: 12px; border-top: 1px solid #e1e4e8;">
@@ -344,7 +344,7 @@ title: Oluwafemi (Femi) James
   </div>
 
   <script>
-    // --- 1. Lightbox Logic ---
+    // --- 1. Lightbox Logic (UPDATED: CONTROLS ON, AUDIO KILLED) ---
     function openLightbox(type, src) {
       var modal = document.getElementById("lightbox-modal");
       var container = document.getElementById("lightbox-container");
@@ -360,9 +360,26 @@ title: Oluwafemi (Femi) James
         var vid = document.createElement("video");
         vid.src = src;
         vid.id = "lightbox-content";
+        
+        // --- 1. ENABLE CONTROLS (Pause/Rewind) ---
         vid.controls = true; 
-        vid.autoplay = true; 
-        // Remove 'playsinline' here so it can go native fullscreen if user wants
+        
+        // --- 2. FORCE SILENCE ---
+        vid.muted = true;     
+        vid.volume = 0; // Set volume level to 0%
+        vid.loop = true;      
+        vid.autoplay = true;  
+        vid.playsInline = true;
+
+        // --- 3. THE MUTE GUARD ---
+        // If user tries to unmute, this instantly forces it back to mute
+        vid.onvolumechange = function() {
+            if (!this.muted || this.volume > 0) {
+                this.muted = true;
+                this.volume = 0;
+            }
+        };
+
         container.appendChild(vid);
       }
 
@@ -375,6 +392,51 @@ title: Oluwafemi (Femi) James
       modal.style.display = "none";
       container.innerHTML = ""; // Stop video playback
     }
+
+    // --- 2. Lazy Load & Smart Auto-Play Logic ---
+    document.addEventListener("DOMContentLoaded", function() {
+      var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy-video"));
+
+      if ("IntersectionObserver" in window) {
+        var videoObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(video) {
+            if (video.isIntersecting) {
+              
+              var sources = video.target.querySelectorAll('source');
+              sources.forEach(function(source) {
+                  if (source.dataset.src) {
+                    source.src = source.dataset.src;
+                    delete source.dataset.src; 
+                  }
+              });
+               
+              video.target.load();
+              video.target.classList.remove("lazy-video");
+               
+              // We force mute/volume 0 on the main page videos too
+              video.muted = true;
+              video.volume = 0;
+
+              var playPromise = video.target.play();
+              if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                  // Autoplay started!
+                }).catch(error => {
+                  console.log("Autoplay prevented:", error);
+                });
+              }
+
+            } else {
+               video.target.pause();
+            }
+          });
+        }, { threshold: 0.25 }); 
+
+        lazyVideos.forEach(function(lazyVideo) {
+          videoObserver.observe(lazyVideo);
+        });
+      }
+    });
   </script>
 
   <div class="project-card" style="margin-top: 40px; border-top: 4px solid #6f42c1; box-shadow: none; padding: 25px;">
