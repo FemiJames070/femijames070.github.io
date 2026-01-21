@@ -602,10 +602,10 @@ title: Oluwafemi (Femi) James
             <br>• PDF Report Generation
           </p>
           <div style="margin-top: 25px;">
-            <a href="https://strokerisk-tool.streamlit.app/" target="_blank" class="btn" style="background-color: #0366d6; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <a href="https://strokerisktool.streamlit.app/Patient_Data_Entry/" target="_blank" class="btn" style="background-color: #0366d6; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
               Launch Live App 🚀
             </a>
-            <a href="https://github.com/YourUsername/StrokeRisk" target="_blank" style="margin-left: 15px; color: #0366d6; text-decoration: none; font-weight: 600;">
+            <a href="https://github.com/FemiJames070/StrokeRisk_Tool/" target="_blank" style="margin-left: 15px; color: #0366d6; text-decoration: none; font-weight: 600;">
               View GitHub Repo →
             </a>
           </div>
