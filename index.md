@@ -375,50 +375,6 @@ title: Oluwafemi (Femi) James
       modal.style.display = "none";
       container.innerHTML = ""; // Stop video playback
     }
-
-    // --- 2. Lazy Load & Smart Auto-Play Logic ---
-    document.addEventListener("DOMContentLoaded", function() {
-      var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy-video"));
-
-      if ("IntersectionObserver" in window) {
-        var videoObserver = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(function(video) {
-            if (video.isIntersecting) {
-              // Video entered view
-              var sources = video.target.querySelectorAll('source');
-              sources.forEach(function(source) {
-                  if (source.dataset.src) {
-                    source.src = source.dataset.src;
-                    delete source.dataset.src; 
-                  }
-              });
-               
-              video.target.load();
-              video.target.classList.remove("lazy-video");
-               
-              // Force play promise to handle browser restrictions
-              var playPromise = video.target.play();
-              if (playPromise !== undefined) {
-                playPromise.then(_ => {
-                  // Autoplay started!
-                }).catch(error => {
-                  // Auto-play was prevented.
-                  console.log("Autoplay prevented:", error);
-                });
-              }
-
-            } else {
-              // Video left view -> Pause it
-               video.target.pause();
-            }
-          });
-        }, { threshold: 0.1 }); // Trigger as soon as 10% is visible
-
-        lazyVideos.forEach(function(lazyVideo) {
-          videoObserver.observe(lazyVideo);
-        });
-      }
-    });
   </script>
 
   <div class="project-card" style="margin-top: 40px; border-top: 4px solid #6f42c1; box-shadow: none; padding: 25px;">
@@ -611,23 +567,28 @@ title: Oluwafemi (Femi) James
               View GitHub Repo →
             </a>
 
-        </div>
+          </div>
         </div>
 
         <div style="flex: 1; min-width: 300px;">
-        
-        <div style="border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8; line-height: 0;">
-          <video class="lazy-video" width="100%" height="auto" controls muted playsinline poster="assets/images/strokerisk_ui_preview.png">
-            <source data-src="assets/videos/strokerisk_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+          
+          <div style="border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8; line-height: 0;">
+            <video class="lazy-video" width="100%" height="auto" controls muted playsinline poster="assets/images/strokerisk_ui_preview.png">
+              <source data-src="assets/videos/strokerisk_demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-        <div style="text-align: center; font-size: 0.8rem; color: #586069; margin-top: 8px;">
-          <strong>Figure 3:</strong> Live Demo: The Clinician Dashboard & Explainable AI
+          <div style="text-align: center; font-size: 0.8rem; color: #586069; margin-top: 8px;">
+            <strong>Figure 3:</strong> Live Demo: The Clinician Dashboard & Explainable AI
+          </div>
+
         </div>
 
       </div>
+    </div>
+
+  </div> </details>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -669,11 +630,6 @@ title: Oluwafemi (Femi) James
     }
   });
 </script>
-
-      </div>
-    </div>
-
-  </div> </details>
 
 <hr style="margin-top: 50px; margin-bottom: 30px; border: 0; border-top: 1px solid #eaecef;">
 
