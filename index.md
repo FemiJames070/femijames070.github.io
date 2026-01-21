@@ -603,7 +603,7 @@ title: Oluwafemi (Femi) James
           </p>
           <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 15px; align-items: flex-start;">
             
-            <a href="https://strokerisktool.streamlit.app/Patient_Data_Entry/" target="_blank" class="btn" style="background-color: #0366d6; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <a href="https://strokerisktool.streamlit.app/Patient_Data_Entry" target="_blank" class="btn" style="background-color: #0366d6; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
               Launch Live App 🚀
             </a>
 
