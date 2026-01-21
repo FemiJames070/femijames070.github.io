@@ -612,11 +612,60 @@ title: Oluwafemi (Femi) James
         </div>
 
         <div style="flex: 1; min-width: 300px;">
-          <img src="assets/images/strokerisk_ui_preview.png" alt="StrokeRisk Streamlit Dashboard" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8;">
-          <div style="text-align: center; font-size: 0.8rem; color: #586069; margin-top: 8px;">
-            Figure 3: The Clinician Dashboard with Explainable AI (SHAP)
-          </div>
+        
+        <div style="border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 1px solid #e1e4e8; line-height: 0;">
+          <video class="lazy-video" width="100%" height="auto" controls muted playsinline poster="assets/images/strokerisk_ui_preview.png">
+            <source data-src="assets/videos/strokerisk_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
+
+        <div style="text-align: center; font-size: 0.8rem; color: #586069; margin-top: 8px;">
+          <strong>Figure 3:</strong> Live Demo: The Clinician Dashboard & Explainable AI
+        </div>
+
+      </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy-video"));
+
+    if ("IntersectionObserver" in window) {
+      var videoObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(video) {
+          if (video.isIntersecting) {
+            // Video entered view: Load and Play
+            var sources = video.target.querySelectorAll('source');
+            sources.forEach(function(source) {
+                if (source.dataset.src) {
+                  source.src = source.dataset.src;
+                  delete source.dataset.src; 
+                }
+            });
+            
+            video.target.load();
+            video.target.classList.remove("lazy-video");
+            
+            // Attempt to play (muted is required for autoplay)
+            var playPromise = video.target.play();
+            if (playPromise !== undefined) {
+              playPromise.catch(error => {
+                console.log("Autoplay prevented:", error);
+              });
+            }
+          } else {
+            // Video left view: Pause to save resources
+             video.target.pause();
+          }
+        });
+      }, { threshold: 0.25 }); // 25% visibility required to trigger start
+
+      lazyVideos.forEach(function(lazyVideo) {
+        videoObserver.observe(lazyVideo);
+      });
+    }
+  });
+</script>
 
       </div>
     </div>
