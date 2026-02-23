@@ -39,7 +39,7 @@ This site is built with a focus on performance and clean UX:
 ---
 
 ### 📬 Contact
-**Available for Senior Engineering & Platform Leadership roles.**
+**Available for Product Engineering & Management.**
 
 * 📧 **Email:** [femijames070@gmail.com](mailto:femijames070@gmail.com)
 * 👔 **LinkedIn:** [linkedin.com/in/femijames](https://www.linkedin.com/in/femijames/)
