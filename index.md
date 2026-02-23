@@ -701,7 +701,7 @@ title: Oluwafemi (Femi) James
   
   <p style="font-size: 1.15rem; color: #586069; margin-bottom: 35px; line-height: 1.6;">
     I am currently based in <strong>Calgary, AB</strong> and available for <br>
-    <strong style="color: #0366d6;">Senior Engineering & Platform Leadership</strong> roles.
+    <strong style="color: #0366d6;">Product Engineering & Management</strong> roles.
   </p>
   
   <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
