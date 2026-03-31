@@ -4,7 +4,7 @@ title: Oluwafemi (Femi) James
 ---
 
 <div class="hero-box" style="text-align: center;">
-  <h1 style="margin-bottom: 25px;">I Build data-driven applications that bridge the gap between raw analytics and integrated AI to optimize business operations.</h1>
+  <h1 style="margin-bottom: 25px;">I Build Data-Driven Applications That Bridge The Gap Between Raw Analytics And Integrated AI To Optimize Business Operations.</h1>
    
   <p style="font-size: 1.25rem; margin-bottom: 35px; color: #e2e8f0;">
     I use <strong>Data-Driven Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution.</strong> I do it with governance, scalability, and ethics built in.
