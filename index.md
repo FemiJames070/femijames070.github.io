@@ -4,10 +4,10 @@ title: Oluwafemi (Femi) James
 ---
 
 <div class="hero-box" style="text-align: center;">
-  <h1 style="margin-bottom: 25px;">I Build Data-Driven and Integrated AI Applications To Optimize Business Operations.</h1>
+  <h1 style="margin-bottom: 25px;">I Engineer Data-Driven and Integrated AI Applications to Solve High-Stakes Problems..</h1>
    
   <p style="font-size: 1.25rem; margin-bottom: 35px; color: #e2e8f0;">
-    I use <strong>Data-Driven Engineering</strong> to bridge the critical gap between <strong>Customer Demand</strong> and <strong>Operational Execution.</strong> I do it with governance, scalability, and ethics built in.
+    I use <strong>Data-Driven Engineering</strong> to bridge the critical gap between <strong>raw information</strong> and <strong>intelligent execution.</strong> I do it with governance, scalability, and ethics built in.
   </p>
 
   <div style="display: inline-block; text-align: left; max-width: 750px; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
@@ -16,21 +16,21 @@ title: Oluwafemi (Femi) James
       <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
         <span style="margin-right: 12px; font-size: 1.2rem;"></span>
         <span>
-          <strong>The Infrastructure:</strong> I architect <strong>multi-tenant, asset-light systems</strong> that scale without overhead.
+          <strong>The Infrastructure:</strong> Scalable, end-to-end data pipelines designed for high-efficiency processing.
         </span>
       </li>
 
       <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
         <span style="margin-right: 12px; font-size: 1.2rem;"></span>
         <span>
-          <strong>The Connective Tissue:</strong> I deploy <strong>NLP, Computer Vision, and Predictive Models</strong> (Regression, Classification, Time-Series) to automate decisions.
+          <strong>The Connective Tissue:</strong> Applied advanced Computer Vision, NLP, and Deep Predictive Models (Regression, Classification, Time-Series) to filter noise, extract meaning, and automate complex reasoning.
         </span>
       </li>
 
       <li style="margin-bottom: 0; display: flex; align-items: flex-start;">
         <span style="margin-right: 12px; font-size: 1.2rem;"></span>
         <span>
-          <strong>The Outcome:</strong> I build platforms that autonomously orchestrate logistics, secure revenue streams, and <strong>dominate markets</strong>.
+          <strong>The Outcome:</strong> High-fidelity, data-driven platforms that empower critical decision-making and deliver measurable impact across any domain.
         </span>
       </li>
 
